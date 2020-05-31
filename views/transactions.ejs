@@ -3,13 +3,10 @@
 <div class="ui main text container segment">
 	<div class="ui huge header">
 	    Transfer Credit
-	</div>
-	<form class="ui form" action="/users?_method=PUT" method="POST">
-		<!-- <div class="field">
-			<label>Enter Name of the user</label>
-			<input type="text" name="user[name]">
-		</div> -->
+	<form class="ui form" action="/users/<%= user._id %>?_method=PUT" method="POST">
 		<div class="field">
+			<label>Select user</label>
+			<input type="text" name="name">
 			<label>Enter Credit</label>
 			<input type="number" name="credit">
 		</div>

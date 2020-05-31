@@ -61,13 +61,13 @@ app.get("/users/:id/edit", function(req, res){
 			console.log("err");
 		}
 		else{
-			res.render("transactions");
+			res.render("transactions",{user: users});
 		}
 	});
-})
+});
 //update data route
-app.put("/users", function(req, res){
-	user.findByIdAndUpdate(req.params.id, req.body.credit, function(err, users){
+app.put("/users/:id", function(req, res){
+	user.findByIdAndUpdate(req.params.id ,{ $inc: {Credits: -req.body.credit}}, function(err, users){
 		if(err){
 			console.log(err);
 		}
@@ -76,7 +76,16 @@ app.put("/users", function(req, res){
 		}
 	});
 });
-
+app.put("/users/:id", function(req, res){
+	user.findOneAndUpdate({name: req.body.name},{ $inc: {Credits: req.body.credit}}, function(err, users){
+		if(err){
+			console.log(err);
+		}
+		else{
+			res.redirect("/users");
+		}
+	});
+});
 
 //SERVER STARTING
 var port = process.env.PORT || 3000;
