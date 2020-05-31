@@ -72,21 +72,17 @@ app.put("/users/:id", function(req, res){
 			console.log(err);
 		}
 		else{
-			res.redirect("/users");
+			console.log("hi");
 		}
-	});
-});
-app.put("/users/:id", function(req, res){
-	user.findOneAndUpdate({name: req.body.name},{ $inc: {Credits: req.body.credit}}, function(err, users){
+	}), 	user.findOneAndUpdate({name: req.body.name}, { $inc: {Credits: req.body.credit}}, function(err, users){
 		if(err){
 			console.log(err);
 		}
 		else{
-			res.redirect("/users");
+			  res.redirect("/users");
 		}
 	});
 });
-
 //SERVER STARTING
 var port = process.env.PORT || 3000;
 app.listen(port, function(){
