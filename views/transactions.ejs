@@ -5,8 +5,19 @@
 	    Transfer Credit
 	<form class="ui form" action="/users/<%= user._id %>?_method=PUT" method="POST">
 		<div class="field">
-			<label>Select user</label>
-			<input type="text" name="name">
+			<label>Select user to whcih you wish to transfer</label>
+			<select name = "name">
+				<option>anshoo</option>
+				<option>ayush</option>
+				<option>rahul</option>
+				<option>ridhiya</option>
+				<option>milind</option>
+				<option>akankshi</option>
+				<option>raghav</option>
+				<option>kunal</option>
+				<option>apoorv</option>
+				<option>rohan</option>
+			</select>
 			<label>Enter Credit</label>
 			<input type="number" name="credit">
 		</div>

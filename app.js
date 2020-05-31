@@ -72,7 +72,7 @@ app.put("/users/:id", function(req, res){
 			console.log(err);
 		}
 		else{
-			console.log("hi");
+			console.log("Transfer done");
 		}
 	}), 	user.findOneAndUpdate({name: req.body.name}, { $inc: {Credits: req.body.credit}}, function(err, users){
 		if(err){

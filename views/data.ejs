@@ -1,6 +1,11 @@
 <%- include ("./partials/header") %>
 
-<%= users %>
+<%= users.name %>
+<%= users.email %>
+<%= users.age %>
+<%= users.Credits %>
+
+<a href="/users/<%= users._id %>/edit">Make Transaction</a>
 
 
 <%- include ("./partials/footer") %>
