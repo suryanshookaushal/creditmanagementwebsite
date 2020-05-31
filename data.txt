@@ -1,0 +1,61 @@
+// user.create({
+// 	sno: 1,
+// 	name: "anshoo",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 10000
+// },{
+// 	sno: 2,
+// 	name: "ridhiya",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 20000
+// },{
+// 	sno: 3,
+// 	name: "rahul",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 30000
+// },{
+// 	sno: 4,
+// 	name: "ayush",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 80000
+// },{
+// 	sno: 5,
+// 	name: "milind",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 90000
+// },{
+// 	sno: 6,
+// 	name: "akankshi",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 17000
+// },{
+// 	sno: 7,
+// 	name: "raghav",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 19000
+// },{
+// 	sno: 8,
+// 	name: "kunal",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 12000
+// },{
+// 	sno: 9,
+// 	name: "apoorv",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 25000
+// },{
+// 	sno: 10,
+// 	name: "rohan",
+// 	email: "xyz@gmail.com",
+// 	age: 45,
+// 	Credits: 22000
+// });

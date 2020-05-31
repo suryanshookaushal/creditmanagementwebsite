@@ -1,0 +1,31 @@
+<%- include("partials/header") %>
+
+<div class = "container">
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to Credit Management System</h1>
+  <p class="lead">This a simple dynamic tool used to tranfer fund between its user</p>
+  <hr class="my-4">
+  <p></p>
+  <a class="btn btn-primary btn-lg" href="/information" role="button">Learn more</a>
+</div>
+</div>
+<br>
+<br>
+<div class = "container">
+<table id="one">
+	<tr>
+	<th>S.No</th>
+	<th>Name</th>
+	<th>credit</th>
+	</tr>
+	<% users.forEach(function(user){ %>
+	<tr>
+		<td><%= user.sno %></td>
+		<td><a href= "/users/<%= user._id %>" > <%= user.name %> </a> </td>
+		<td><%= user.Credits  %></td>
+	</tr>
+	 <% }) %>
+</table>
+</div>
+
+<%- include("partials/footer") %>
