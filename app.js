@@ -6,7 +6,7 @@ var bodyparser = require('body-parser');
 var app = express();
 
 //DATBASE SETUP
- mongoose.connect("mongodb://localhost/credit", { useNewUrlParser: true, 
+ mongoose.connect("mongodb://localhost/finalcredit", { useNewUrlParser: true, 
 				  useUnifiedTopology: true});
 app.set("view engine","ejs");
 app.use(express.static("public"));

@@ -1,9 +1,10 @@
 <%- include("partials/header") %>
+<link rel="stylesheet" href="/stylesheets/new.css">
 
 <div class = "container">
 <div class="jumbotron">
   <h1 class="display-4">Welcome to Credit Management System</h1>
-  <p class="lead">This a simple dynamic tool used to tranfer fund between its user</p>
+  <p class="lead">This a simple dynamic tool used to tranfer credits between the users</p>
   <hr class="my-4">
   <p></p>
   <a class="btn btn-primary btn-lg" href="/information" role="button">Learn more</a>
@@ -12,20 +13,27 @@
 <br>
 <br>
 <div class = "container">
+	<h1>
+		Users Table
+	</h1>
 <table id="one">
 	<tr>
 	<th>S.No</th>
 	<th>Name</th>
-	<th>credit</th>
+    <th>Email</th>
+	<th>Cuurent Credits</th>
 	</tr>
 	<% users.forEach(function(user){ %>
 	<tr>
-		<td><%= user.sno %></td>
+		<td></td>
 		<td><a href= "/users/<%= user._id %>" > <%= user.name %> </a> </td>
+		<td><%= user.email %></td>
 		<td><%= user.Credits  %></td>
 	</tr>
 	 <% }) %>
 </table>
 </div>
+<br>
+<br>
 
 <%- include("partials/footer") %>

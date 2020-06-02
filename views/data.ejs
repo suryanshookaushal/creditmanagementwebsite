@@ -1,11 +1,18 @@
 <%- include ("./partials/header") %>
 
-<%= users.name %>
-<%= users.email %>
-<%= users.age %>
-<%= users.Credits %>
-
-<a href="/users/<%= users._id %>/edit">Make Transaction</a>
-
+<link rel="stylesheet" href="/stylesheets/data.css">
+<div class = "container">	
+	<div class = "container">
+		<h1>Name</h1>
+	<p><%= users.name %><p>
+		<h1>Email</h1>
+	<p><%= users.email %></p>
+		<h1>Age</h1>
+	<p><%= users.age %></p>
+		<h1>Current Credits</h1>
+	<p><%= users.Credits %></p>
+	<a href="/users/<%= users._id %>/edit">Make Transaction</a>
+	</div>
+</div>
 
 <%- include ("./partials/footer") %>

@@ -1,61 +1,61 @@
 // user.create({
 // 	sno: 1,
-// 	name: "anshoo",
+// 	name: "Anshoo",
 // 	email: "xyz@gmail.com",
 // 	age: 45,
 // 	Credits: 10000
 // },{
 // 	sno: 2,
-// 	name: "ridhiya",
-// 	email: "xyz@gmail.com",
+// 	name: "Ridhiya",
+// 	email: "asd@gmail.com",
 // 	age: 45,
 // 	Credits: 20000
 // },{
 // 	sno: 3,
-// 	name: "rahul",
-// 	email: "xyz@gmail.com",
+// 	name: "Rahul",
+// 	email: "vsd@gmail.com",
 // 	age: 45,
 // 	Credits: 30000
 // },{
 // 	sno: 4,
-// 	name: "ayush",
-// 	email: "xyz@gmail.com",
+// 	name: "Ayush",
+// 	email: "hfas@gmail.com",
 // 	age: 45,
 // 	Credits: 80000
 // },{
 // 	sno: 5,
-// 	name: "milind",
-// 	email: "xyz@gmail.com",
+// 	name: "Milind",
+// 	email: bcz@gmail.com",
 // 	age: 45,
 // 	Credits: 90000
 // },{
 // 	sno: 6,
-// 	name: "akankshi",
-// 	email: "xyz@gmail.com",
+// 	name: "Akankshi",
+// 	email: "hi@gmail.com",
 // 	age: 45,
 // 	Credits: 17000
 // },{
 // 	sno: 7,
-// 	name: "raghav",
-// 	email: "xyz@gmail.com",
+// 	name: "Raghav",
+// 	email: "lmn@gmail.com",
 // 	age: 45,
 // 	Credits: 19000
 // },{
 // 	sno: 8,
-// 	name: "kunal",
+// 	name: "Kunal",
 // 	email: "xyz@gmail.com",
 // 	age: 45,
 // 	Credits: 12000
 // },{
 // 	sno: 9,
-// 	name: "apoorv",
-// 	email: "xyz@gmail.com",
+// 	name: "Apoorv",
+// 	email: "pqr@gmail.com",
 // 	age: 45,
 // 	Credits: 25000
 // },{
 // 	sno: 10,
-// 	name: "rohan",
-// 	email: "xyz@gmail.com",
+// 	name: "Rohan",
+// 	email: "abc@gmail.com",
 // 	age: 45,
 // 	Credits: 22000
 // });
