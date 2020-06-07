@@ -6,8 +6,10 @@ var bodyparser = require('body-parser');
 var app = express();
 
 //DATBASE SETUP
- mongoose.connect("mongodb://localhost/finalcredit", { useNewUrlParser: true, 
-				  useUnifiedTopology: true});
+ mongoose.connect("mongodb+srv://anshoo:anshooman@cluster0-wftpq.mongodb.net/<dbname>?retryWrites=true&w=majority",
+				 { useNewUrlParser: true, 
+				  useUnifiedTopology: true,
+				 useCreateIndex: true});
 app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use(methodoveride("_method"));
@@ -23,6 +25,8 @@ var userSchema = new mongoose.Schema({
 	Credits: Number
  });
 var user = mongoose.model("user",userSchema);
+// 
+
 //ROUTES
 //home page route
 app.get("/", function(req, res){
